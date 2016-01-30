@@ -15,8 +15,9 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.4.9",
-    "angular-material": "~1.0.4",
-    "dynamic-directive": "~2.0.0"
+    "angular": "1.4.9",
+    "angular-material": "1.0.4",
+    "dynamic-directive": "2.0.0",
+    "angular-d10-rest": "dready92/angular-d10-rest#master"
   }
 }

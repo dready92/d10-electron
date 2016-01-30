@@ -8,6 +8,10 @@
   "copyright": "© 2016, Mickael !",
   "main": "background.js",
   "dependencies": {
+    "bower": "^1.7.7",
     "fs-jetpack": "^0.7.0"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install --allow-root"
   }
 }
