@@ -6,6 +6,7 @@ var gulp = require('gulp');
 var rollup = require('rollup');
 var less = require('gulp-less');
 var jetpack = require('fs-jetpack');
+var jade = require('gulp-jade');
 
 var utils = require('./utils');
 var generateSpecsImportFile = require('./generate_specs_import');
@@ -104,6 +105,15 @@ var lessTask = function () {
 gulp.task('less', ['clean'], lessTask);
 gulp.task('less-watch', lessTask);
 
+var jadeTask = function () {
+  console.log('destDir', destDir.path());
+    return gulp.src('app/**/*.jade')
+    .pipe(jade())
+    .pipe(gulp.dest(destDir.path()));
+};
+gulp.task('jade', ['clean'], jadeTask);
+gulp.task('jade-watch', jadeTask);
+
 
 gulp.task('finalize', ['clean'], function () {
     var manifest = srcDir.read('package.json', 'json');
@@ -134,7 +144,7 @@ gulp.task('watch', function () {
     gulp.watch('app/**/*.js', ['bundle-watch']);
     gulp.watch(paths.copyFromAppDir, { cwd: 'app' }, ['copy-watch']);
     gulp.watch('app/**/*.less', ['less-watch']);
+    gulp.watch('app/**/*.jade', ['jade-watch']);
 });
 
-
-gulp.task('build', ['bundle', 'less', 'copy', 'finalize']);
+gulp.task('build', ['bundle', 'jade', 'less', 'copy', 'finalize']);
