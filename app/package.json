@@ -1,11 +1,11 @@
 {
-  "name": "electron-boilerplate",
-  "productName": "Electron Boilerplate",
-  "identifier": "com.example.electron-boilerplate",
-  "description": "Starter for your Electron application. Out of the box ready for serious stuff.",
-  "version": "0.1.0",
-  "author": "Mr Gumby",
-  "copyright": "© 2016, your company here",
+  "name": "d10",
+  "productName": "10er10 desktop application",
+  "identifier": "com.10er10.d10",
+  "description": "A desktop client for the 10er10 jukebox server",
+  "version": "1.0.0",
+  "author": "<mickael.bailly@free.fr>",
+  "copyright": "© 2016, Mickael !",
   "main": "background.js",
   "dependencies": {
     "fs-jetpack": "^0.7.0"

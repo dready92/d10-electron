@@ -1,0 +1,22 @@
+{
+  "name": "d10",
+  "main": "background.js",
+  "version": "1.0.0",
+  "homepage": "https://githhub.co",
+  "authors": [
+    "Michael Bailly <mbailly@linagora.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.9",
+    "angular-material": "~1.0.4",
+    "dynamic-directive": "~2.0.0"
+  }
+}
