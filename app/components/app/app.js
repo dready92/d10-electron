@@ -8,7 +8,15 @@ let app = angular.module('d10', [
   'op.dynamicDirective',
   'ui.router',
   'd10-session'
-]).config(function ($stateProvider) {
+])
+.directive('d10Main', function () {
+
+  return {
+    restrict: 'E',
+    templateUrl: 'components/app/main.html'
+  };
+})
+.config(function ($stateProvider) {
   $stateProvider
   .state('index', {
     url: '',
@@ -26,6 +34,9 @@ let app = angular.module('d10', [
   })
   .state('login', {
     template: '<d10-login></d10-login>'
+  })
+  .state('main', {
+    template: '<d10-main></d10-main>'
   });
 });
 
