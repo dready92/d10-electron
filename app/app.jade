@@ -17,15 +17,5 @@ html
     script(src="./bower_components/angular-material/angular-material.js")
 
     script(src="app.js")
-  body
-    .container
-      h1#greet
-      p.subtitle 
-        | Welcome to 
-        a.js-external-link(href="http://electron.atom.io") Electron
-        | app running on this magnificent
-        strong#platform-info
-        | machine.
-      p.subtitle You are in
-        strong#env-name
-        | environment.
+  body(ng-app='d10')
+    div(ui-view='')
