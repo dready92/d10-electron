@@ -20,6 +20,7 @@ var paths = {
         './node_modules/**',
         './vendor/**',
         './bower_components/**',
+        './components/**',
         './**/*.html',
         './**/*.+(jpg|png|svg)'
     ],
@@ -107,8 +108,7 @@ gulp.task('less', ['clean'], lessTask);
 gulp.task('less-watch', lessTask);
 
 var jadeTask = function () {
-  console.log('destDir', destDir.path());
-    return gulp.src('app/**/*.jade')
+  return gulp.src('app/**/*.jade')
     .pipe(jade())
     .pipe(gulp.dest(destDir.path()));
 };
