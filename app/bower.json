@@ -19,6 +19,7 @@
     "angular-material": "1.0.4",
     "dynamic-directive": "2.0.0",
     "angular-d10-rest": "dready92/angular-d10-rest#master",
+    "angular-d10-session": "dready92/angular-d10-session#master",
     "ui-router": "~0.2.17"
   }
 }
