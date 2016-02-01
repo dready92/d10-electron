@@ -11,3 +11,4 @@ import env from './env';
 //var appDir = jetpack.cwd(app.getAppPath());
 
 import login from './components/login/login';
+import library from './components/library/library';

@@ -7,7 +7,8 @@ let app = angular.module('d10', [
   'ngMessages',
   'op.dynamicDirective',
   'ui.router',
-  'd10-session'
+  'd10-session',
+  'd10-library'
 ])
 .directive('d10Main', function () {
 
